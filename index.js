@@ -9,7 +9,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/api/animals',(req,res)=>{
-  res.send(animals);
+  res.render("animals_index");
 })
 
 app.get('/api/animals/:id', (req,res)=>{
