@@ -17,7 +17,7 @@ app.get('/api/animals/:id', (req,res)=>{
   if(!animal){
     res.status(404).send('The animal id was not found')
   }else{
-    res.send(animal)
+    res.render(animal)
   }
 
 })
