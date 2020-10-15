@@ -1,9 +1,9 @@
 const express = require('express');
 const app =express();
-const PORT = 3000;
+const PORT = process.env.PORT ||3000;
 
 app.get('/',(req,res)=>{
-   res.send('hello')
+   res.send('hello world')
 })
 
 app.get('/api/animals',(req,res)=>{
@@ -11,5 +11,5 @@ app.get('/api/animals',(req,res)=>{
 })
 
 app.listen(PORT, ()=>{
-  console.log(`the app is listening on port ${PORT}`)
+  console.log(`the app is listening on port ${PORT}....`)
 })
