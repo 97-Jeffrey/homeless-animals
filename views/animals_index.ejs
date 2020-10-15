@@ -6,6 +6,13 @@
   <title>This page renders all animals</title>
 </head>
 <body>
-  <h1>these are all the missing animals</h1>
+  <h1>Missing animals' list:</h1>
+
+  <% for(const animal of animals){ %>
+    <h2><%= animal.Stype%>:</h2>
+    <img src=<%= animal.imageURL%> alt=<%= animal.Stype%>>
+    <h4><%= animal.placeFound%></h4>
+    <h4><%= animal.status%></h4>
+    <%}%>
 </body>
 </html>

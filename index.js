@@ -9,7 +9,8 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/api/animals',(req,res)=>{
-  res.render("animals_index");
+  const templateVar ={animals:animals}
+  res.render("animals_index" ,templateVar);
 })
 
 app.get('/api/animals/:id', (req,res)=>{
