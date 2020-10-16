@@ -4,7 +4,8 @@ const PORT = process.env.PORT ||3000;
 const animals= require('./animals')
 app.set('view engine', "ejs");
 app.use(express.static(__dirname + '/public'));
-app.use(express.json());
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/',(req,res)=>{
    res.send('hello world')
