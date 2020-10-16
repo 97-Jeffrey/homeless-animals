@@ -16,10 +16,11 @@ app.get('/api/animals',(req,res)=>{
 
 app.get('/api/animals/:id', (req,res)=>{
   const animal = animals.find(animal=>animal.id === parseInt(req.params.id))
+  const templateVar = {animal: animal}
   if(!animal){
     res.status(404).send('The animal id was not found')
   }else{
-    res.render(animal)
+    res.render("animal_each", templateVar)
   }
 
 })
