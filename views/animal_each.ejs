@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="/css/animal.css">
 </head>
 <body>
-  <h2>this is individual animal</h2>
-  <h2><%= animal.Btype%>:<%=animal.Stype%></h2>
+ 
+  <h2>Breed:<%=animal.Stype%></h2>
   <img src=<%= animal.imageURL%> alt="">
-  <div><%= animal.placeFound%></div>
+  <div>Founded at: <%= animal.placeFound%></div>
+  <div>Status: <%= animal.status%></div>
   
 </body>
 </html>
