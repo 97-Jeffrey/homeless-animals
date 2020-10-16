@@ -39,7 +39,7 @@ app.post('/api/animals', (req,res)=>{
     description: req.body.description
   };
   animals.push(animal);
-  res.send(animal);
+  res.redirect('/api/animals');
 })
 
 app.listen(PORT, ()=>{
