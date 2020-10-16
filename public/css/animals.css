@@ -13,7 +13,13 @@ body{
 
 }
 
+.all-animals{
+  display:flex;
+  flex-wrap: wrap;
+}
 .each-animal{
-  width:350px;
+  width:300px;
   border: 2px solid grey;
+  margin:20px;
+
 }
