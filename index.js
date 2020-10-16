@@ -15,6 +15,10 @@ app.get('/api/animals',(req,res)=>{
   res.render("animals_index" ,templateVar);
 })
 
+app.get('/api/animals/new',(req,res)=>{
+  res.render('animal_new')
+})
+
 app.get('/api/animals/:id', (req,res)=>{
   const animal = animals.find(animal=>animal.id === parseInt(req.params.id))
   const templateVar = {animal: animal}
