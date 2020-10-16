@@ -26,6 +26,22 @@ app.get('/api/animals/:id', (req,res)=>{
 
 })
 
+app.post('/api/animals', (req,res)=>{
+  const animal = {
+    id: animals.length +1,
+    Btype: req.body.Btype,
+    Stype: req.body.Stype,
+    placeFound: req.body.placeFound,
+    found: req.body.found,
+    status: req.body.status,
+    imageURL: req.body.imageURL,
+    physical_conditon:req.body.physical_conditon,
+    description: req.body.description
+  };
+  animals.push(animal);
+  res.send(animal);
+})
+
 app.listen(PORT, ()=>{
   console.log(`the app is listening on port ${PORT}....`)
 })
