@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>This page renders all animals</title>
   <link rel="stylesheet" href="/css/animals.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
   <h1>Found animals' list:</h1>
   <div class='all-animals'>
   <% for(const animal of animals){ %>
     <div class='each-animal'>
-      <h1><%= animal.Stype%></h1>
+      <h2><%= animal.Stype%></h2>
       <img src=<%= animal.imageURL%> alt=<%= animal.Stype%>>
       <h3>Found At : <%=animal.found%></h3>
-    <a href="/api/animals/<%= animal.id%>">More Details</a>
+    <a class='btn btn-primary' href="/api/animals/<%= animal.id%>">More Details</a>
   </div>
     <%}%>
   </div>

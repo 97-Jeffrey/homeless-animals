@@ -4,7 +4,7 @@
 }
 
 img{
-  width:300px;
+  width:296px;
   height:250px;
 
 }
@@ -12,9 +12,11 @@ body{
   font-size: small;
 
 }
+h2{
+  text-align: center;
+}
 h3{
-  margin-left:60px;
-  
+  margin-left:25px;
 }
 
 .all-animals{
@@ -23,7 +25,7 @@ h3{
 }
 .each-animal{
   width:300px;
-  height:380px;
+  height:500px;
   border: 2px solid grey;
   box-shadow: 3px 3px grey;
   margin:20px;

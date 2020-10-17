@@ -1,4 +1,12 @@
 input{
-  display:block;
-  margin-bottom: 20px;
+   display:block;
+   
+}
+
+button{
+  margin-top:30px;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
 }
