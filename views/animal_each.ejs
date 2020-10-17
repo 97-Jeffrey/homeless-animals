@@ -10,7 +10,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
- 
+  <%- include('partials/_header') %> 
+  <div class='detail'> 
   <h2>Breed:<%=animal.Stype%></h2>
   <img src=<%= animal.imageURL%> alt="">
   <div>When : <%= animal.found%></div>
@@ -19,7 +20,7 @@
   <div>Physical condition: <%= animal.physical_conditon%></div>
   <div>Description: <%= animal.description%></div>
   <a class='btn btn-warning' href="/api/animals">Back To Main Page</a>
-
+  </div>
   
 </body>
 </html>

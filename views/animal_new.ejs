@@ -10,6 +10,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <%- include('partials/_header') %> 
+  <div class='all'>
   <h1>A new homeless animal info:</h1>
 <div class='group'>
   <form action="/api/animals", method="POST">
@@ -31,6 +33,7 @@
    <input type="text" name="description">
    <button class='btn btn-success mt-30'type='submit'>Submit</button>
   </form>
+</div>
 </div>
 </body>
 </html>

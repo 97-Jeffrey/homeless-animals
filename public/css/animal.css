@@ -1,9 +1,17 @@
 
+*{
+  margin:0;
+  padding:0;
+}
 img{
   width:300px;
 }
-div{
+.detail div{
   margin-top:20px;
+}
+
+.detail{
+  margin-top: 100px;
 }
 a{
   display:inline-block;
