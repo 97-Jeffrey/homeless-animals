@@ -10,8 +10,10 @@ img{
 }
 body{
   font-size: small;
-
+  margin-top: 100px;
+  border:5px solid black;
 }
+
 h2{
   text-align: center;
 }
@@ -22,6 +24,7 @@ h3{
 .all-animals{
   display:flex;
   flex-wrap: wrap;
+  margin-top:100px;
 }
 .each-animal{
   width:300px;

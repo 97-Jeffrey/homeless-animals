@@ -10,7 +10,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <h1>Found animals' list:</h1>
+  <%- include('partials/_header') %> 
+ 
   <div class='all-animals'>
   <% for(const animal of animals){ %>
     <div class='each-animal'>
