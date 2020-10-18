@@ -21,6 +21,9 @@
   <div>Description: <%= animal.description%></div>
   <a class='btn btn-warning' href="/api/animals">Back To Main Page</a>
   </div>
+  <form action="/api/animals/<%= animal.id%>/delete" method="POST">
+    <button class='btn btn-danger'type='submit'>Delete</button>
+  </form>
   
 </body>
 </html>
