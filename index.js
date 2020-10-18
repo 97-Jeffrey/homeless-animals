@@ -47,6 +47,14 @@ app.post('/api/animals', (req,res)=>{
   res.redirect('/api/animals');
 })
 
+app.post('/api/animals/:id/delete',(req,res)=>{
+  const animal = animals.find(animal=>animal.id === parseInt(req.params.id));
+
+  const index = animals.indexOf(animal);
+  animals.splice(index,1);
+  res.redirect("/api/animals")
+})
+
 app.listen(PORT, ()=>{
   console.log(`the app is listening on port ${PORT}....`)
 })
