@@ -12,18 +12,19 @@
 <body>
   <%- include('partials/_header') %> 
   <div class='detail'> 
-  <h2>Breed:<%=animal.Stype%></h2>
-  <img src=<%= animal.imageURL%> alt="">
-  <div>When : <%= animal.found%></div>
-  <div>Founded at: <%= animal.placeFound%></div>
-  <div>Status: <%= animal.status%></div>
-  <div>Physical condition: <%= animal.physical_conditon%></div>
-  <div>Description: <%= animal.description%></div>
-  <a class='btn btn-warning' href="/api/animals">Back To Main Page</a>
+    <h2>Breed:  <%=animal.Stype%></h2>
+    <img src=<%= animal.imageURL%> alt="">
+    <div>When : <%= animal.found%></div>
+    <div>Founded at: <%= animal.placeFound%></div>
+    <div>Status: <%= animal.status%></div>
+    <div>Physical condition: <%= animal.physical_conditon%></div>
+    <div>Description: <%= animal.description%></div>
   </div>
-  <form action="/api/animals/<%= animal.id%>/delete" method="POST">
-    <button class='btn btn-danger'type='submit'>Delete</button>
-  </form>
-  
+   <div class='two-button'>
+    <a class='btn btn-warning' href="/api/animals">Back To Main Page</a>
+    <form action="/api/animals/<%= animal.id%>/delete" method="POST">
+    <button class='btn btn-danger mt-30'type='submit'>Delete</button>
+    </form>
+   </div>
 </body>
 </html>
